@@ -34,6 +34,10 @@ const ExpenseForm = (props) => {
     });
   };
 
+  const cancelFormHandler = () => {
+    props.onToggleExpenseForm(false);
+  };
+
   const formSubmitHandler = (event) => {
     //prevent send to hosting sever and reload page
     event.preventDefault();
@@ -78,6 +82,9 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button type="button" onClick={cancelFormHandler}>
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
