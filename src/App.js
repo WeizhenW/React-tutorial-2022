@@ -29,9 +29,10 @@ function App() {
 
   const addNewExpenseHandler = (newExpense) => {
     console.log(newExpense);
-    // updateExpenses((prevState) => {
-    //   prevState.push(newExpense);
-    // });
+    console.log(expenses);
+    updateExpenses((prevState) => {
+      prevState.push(newExpense);
+    });
   };
 
   return (
