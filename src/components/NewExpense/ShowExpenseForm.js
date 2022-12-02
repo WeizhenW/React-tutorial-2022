@@ -8,5 +8,4 @@ const ShowExpenseForm = (props) => {
     </div>
   );
 };
-
 export default ShowExpenseForm;
