@@ -33,7 +33,6 @@ function App() {
     console.log(expenses);
     updateExpenses((prevState) => {
      return [...prevState, newExpense];
-      // prevState.push(newExpense);
     });
   };
 
