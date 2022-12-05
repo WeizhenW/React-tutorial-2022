@@ -1,5 +1,6 @@
 import React from "react";
 import "./ExpensesFilter.css";
+import Wrapper from "../Helper/Wrapper";
 
 const ExpensesFilter = (props) => {
   const yearSelectHandler = (event) => {
@@ -8,6 +9,7 @@ const ExpensesFilter = (props) => {
   };
 
   return (
+    <Wrapper>
     <div className="expenses-filter">
       <div className="expenses-filter__control">
         <label>Filter by year</label>
@@ -19,6 +21,7 @@ const ExpensesFilter = (props) => {
         </select>
       </div>
     </div>
+    </Wrapper>
   );
 };
 
