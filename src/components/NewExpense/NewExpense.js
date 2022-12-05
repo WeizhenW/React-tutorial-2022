@@ -14,7 +14,6 @@ const NewExpense = (props) => {
   const toggleExpenseForm = (showForm) => {
     setShowExpenseFormValue(showForm);
   }
-
   return (
     <div className="new-expense">
       {showExpenseForm ? (
